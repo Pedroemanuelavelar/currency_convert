@@ -1,0 +1,21 @@
+.footer {
+    padding: 35px 41px 20px 40px;
+    .footer__title {
+        color: $color-3;
+        font-weight: 400;
+        font-style: normal;
+        text-align: center;
+        line-height: 25px;
+
+        .footer__link {
+           text-decoration: none;
+           color: $color-3;
+           transition: all .4s;
+           
+           &:hover {
+               color: $color-6;
+               text-decoration: underline;
+           }
+        }
+    }
+}

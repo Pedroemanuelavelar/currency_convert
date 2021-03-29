@@ -1,0 +1,307 @@
+@import "./mixins";
+@import "./maps";
+
+.title__header {
+    text-align: center;
+    padding: 40px 10px 14px 8px;
+    .title__h1 {
+        text-align: center;
+        font-size: 25px;
+        font-weight: 600;
+        font-style: normal;
+        line-height: 37px;
+
+        @include for__desktop__only-lg {
+            font-size: 40px;
+            width: 282px;
+            text-align: left;
+            line-height: 47px;
+            margin: 0 auto;
+            transform: translateX(-40px);
+        }
+
+        @media (min-width: 1360px) and (max-height: 768px) {
+            font-size: 40px;
+            width: 282px;
+            text-align: left;
+            line-height: 47px;
+            margin: 0 auto;
+            transform: translateX(-40px);
+        }
+    }
+}
+
+.divisor {
+    border-bottom: 3px solid $primary-color;
+    width: 200px;
+    padding-left: 40px;
+    margin: 0 auto;
+    transform: translateX(-39px);
+
+    @include for__desktop__only-lg {
+        width: 298px;
+        transform: translateX(-30px);
+        margin: 0 auto;
+    }
+
+    @media (min-width: 1360px) and (max-height: 768px) {
+        width: 298px;
+        transform: translateX(-30px);
+        margin: 0 auto;
+    }
+
+}
+
+.container {
+    padding-bottom: 41px;
+    .container__box {
+        background-color: $color-7;
+        border-radius: 3px;
+        margin: 0 auto;
+        height: 434px;
+        width: 280px;
+        transform: translateY(26px);
+        padding: 36px 35px 0px 40px;
+
+        @include for__desktop__only-lg {
+            width: 356px;
+            height: 400px;  
+            padding: 26px 25px 0 25px;
+        }
+
+        @media (min-width: 1360px) and (max-height: 768px) {
+            width: 356px;
+            height: 400px;
+            padding: 26px 25px 0 25px;
+        }
+
+        .container__inputs {
+            .container__input {
+                width: 161px;
+                height: 42px;
+                background: $color-8;
+                border: none;
+                border-radius: 0px 2px 2px 0px;
+                padding: 8px 16px 9px 17px;
+                font-size: 20px;
+                color: $primary-color;
+                font-weight: 300;
+                font-family: 'Poppins', sans-serif;
+                margin-bottom: 18px;
+                margin-left: 38px;
+                outline: none;
+                overflow: hidden;
+
+                &:focus, &:active {
+                    border: 1px solid $color-4;
+                    border-radius: 0px 2px 2px 0px;
+                }
+
+                &::-webkit-input-placeholder, &:-moz-placeholder {
+                    font-size: 20px;
+                    line-height: 38px;
+                    font-weight: 300;
+                    font-family: 'Poppins', sans-serif;
+                    color: $color-4;
+                }
+
+                @include for__desktop__only-lg {
+                    width: 272px;
+                }
+
+                @media (min-width: 1360px) and (max-height: 768px) {
+                    width: 272px;
+                }
+            }
+        }
+
+        .container__usd {
+            background-color: $color-9; 
+            width: 44px; 
+            height: 42px; 
+            position: absolute; 
+            top: 36px;
+            left: 34px;
+            align-items: center; 
+            justify-content: center;
+            display: flex;
+            border-radius: 2px 0px 0px 2px;
+
+            @include for__desktop__only-lg {
+                position: absolute;
+                top: 26px;
+                left: 20px;
+            }
+
+            @media (min-width: 1360px) and (max-height: 768px) {
+                position: absolute;
+                top: 26px;
+                left: 20px;
+            }
+        }
+
+        .container__brl {
+            background-color: $color-9; 
+            width: 44px; 
+            height: 42px; 
+            position: absolute; 
+            top: 96px;
+            left: 34px;
+            align-items: center; 
+            justify-content: center;
+            display: flex;
+            border-radius: 2px 0px 0px 2px;
+
+            @include for__desktop__only-lg {
+                position: absolute;
+                top: 86px;
+                left: 20px;
+            }
+
+            @media (min-width: 1360px) and (max-height: 768px) {
+                position: absolute;
+                top: 86px;
+                left: 20px;
+            }
+        }
+
+        .icons__coins {
+            .icons__box {
+                display: flex;
+                width: 100%;
+
+                .icons__box-flags {
+                    margin-top: 18px;
+                }
+
+                .icons__box-title {
+                    font-size: 15px;
+                    line-height: 22px;
+                    font-weight: 400;
+                    color: $color-1;
+                    font-style: normal;
+                    padding-top: 11px;
+                    padding-left: 10px;
+                }
+
+                .icons__box-coinID{
+                    display: flex;
+                    flex-direction: column-reverse;
+                    color: $color-5;
+                    font-weight: 400;
+                    font-size: 11px;
+                    transform: translate(-125px, 4px);
+
+                    .icons__box-resourceNotice {
+                        transform: translate(30px, 17px);
+                        color: $color-6;
+                        opacity: 0.52;
+                        font-size: 11px;
+                        font-weight: 300;
+                        font-style: normal;
+                        line-height: 16px;
+                    }
+                }
+
+                #eur-css {
+                    transform: translate(-31px, 4px);
+                }
+
+                #brl-css {
+                    transform: translate(-103px, 4px);
+                    /* padding-bottom: 30px; */
+                }
+            }
+        }
+
+        .button__container {
+            position: absolute;
+            top: 387px;
+            left: 0px;
+
+            @include for__desktop__only-lg {
+                top: 347px;
+            }
+
+            @media (min-width: 1360px) and (max-height: 768px) {
+                top: 347px;
+            }
+
+            .button__convert {
+                background-color: $primary-color;
+                border: none;
+                color: $color-0;
+                font-size: 23px;
+                font-weight: 600;
+                font-family: 'Poppins', sans-serif;
+                padding: 4px 40px 8px 40px;
+                border-radius: 0px 0px 3px 3px;
+                width: 280px;
+                height: 53px;
+                cursor: pointer;
+                transition: all .4s ease-in;
+                outline: none;
+
+                &:hover {
+                    background-color: $primary-color-hover;
+                    color: $color-0-hover;
+                }
+
+                &:focus, &:active {
+                    border: 2px solid $color-4;
+                    border-radius: 0px 0px 3px 3px;
+                }
+
+                @include for__desktop__only-lg {
+                    width: 356px;
+                }
+
+                @media (min-width: 1360px) and (max-height: 768px) {
+                    width: 356px;
+                }
+
+            }
+        }
+    }
+
+    .article__coins {
+        .article__coins-title {
+            color: $color-1;
+            margin-left: -5px;
+            padding-bottom: 5px;
+            padding-top: 22px;
+            font-size: 23px;
+            font-weight: 600;
+            line-height: 34px;
+
+            @include for__desktop__only-lg {
+                padding-top: 0px;
+                margin-left: -2px;
+            }
+
+            @media (min-width: 1360px) and (max-height: 768px) {
+                padding-top: 0px;
+                margin-left: -2px;
+            }
+        }
+    }
+
+    .coins__divisor {
+        border-bottom: 3px solid $primary-color;
+        width: 67px;
+        margin: 0 auto;
+        transform: translateX(-71px);
+
+        @include for__desktop__only-lg {
+            transform: translateX(-120px);
+        }
+
+        @media (min-width: 1360px) and (max-height: 768px) {
+            transform: translateX(-120px);
+        }
+    }
+}
+
+
+
+
