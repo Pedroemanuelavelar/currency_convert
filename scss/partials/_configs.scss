@@ -1,0 +1,35 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color: $backgroud-color;
+    max-width: 800vw;
+}
+
+h1 {
+    color: $primary-color;
+}
+
+::selection {
+    background-color: $color-7;
+    color: $color-3;
+}
+
+::-webkit-scrollbar-track {
+    background-color: $color-4;
+}
+::-webkit-scrollbar {
+    background: $color-8;
+    border-radius: 5px;
+    width: 6px;
+    border-radius: 10px;
+}
+::-webkit-scrollbar-thumb {
+    background: $color-7;
+    border-radius: 0px 0px 10px 10px;
+
+}

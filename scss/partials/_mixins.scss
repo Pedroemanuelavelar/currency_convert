@@ -1,0 +1,24 @@
+/*==================
+=      Mixins      =
+===================*/
+/// https://getbootstrap.com/docs/4.0/layout/overview/
+
+@mixin for__mobile__only-xsm {
+    @media (max-width: $max-xsm) { @content; }
+}
+
+@mixin for__molbile__only-sm {
+    @media (min-width: $min-sm) and (max-width: $max-sm) { @content; }
+}
+
+@mixin for__tablets__only-md {
+    @media (min-width: $min-md) and (max-width: $max-md) { @content; }
+}
+
+@mixin  for__desktop__only-lg {
+    @media (min-width: $min-lg) and (max-width: $max-lg) { @content; }
+}
+
+@mixin for__desktop__only-xlg {
+    @media (min-width: $min-xlg) { @content; }
+}
