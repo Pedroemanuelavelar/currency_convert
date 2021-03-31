@@ -113,6 +113,45 @@
                     width: 272px;
                 }
             }
+
+            .container__input-result {
+                width: 205px;
+                height: 42px;
+                background: $color-8;
+                border: none;
+                border-radius: 0px 2px 2px 0px;
+                padding: 8px 16px 9px 17px;
+                font-size: 20px;
+                color: $primary-color;
+                font-weight: 300;
+                font-family: 'Poppins', sans-serif;
+                margin-bottom: 18px;
+                margin-left: 38px;
+                outline: none;
+                overflow: hidden;
+                transform: translateX(-44px);
+
+                &:focus, &:active {
+                    border: 1px solid $color-4;
+                    border-radius: 0px 2px 2px 0px;
+                }
+
+                &::-webkit-input-placeholder, &:-moz-placeholder {
+                    font-size: 20px;
+                    line-height: 38px;
+                    font-weight: 300;
+                    font-family: 'Poppins', sans-serif;
+                    color: $color-4;
+                }
+
+                @include for__desktop__only-lg {
+                    width: 272px;
+                }
+
+                @media (min-width: 1360px) and (max-height: 768px) {
+                    width: 315px;
+                }
+            }
         }
 
         .container__usd {
@@ -216,15 +255,15 @@
 
         .button__container {
             position: absolute;
-            top: 387px;
+            top: 425px;
             left: 0px;
 
             @include for__desktop__only-lg {
-                top: 347px;
+                top: 397px;
             }
 
             @media (min-width: 1360px) and (max-height: 768px) {
-                top: 347px;
+                top: 393px;
             }
 
             .button__convert {
